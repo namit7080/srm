@@ -1,111 +1,346 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>cultural clubs of srm</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"> 
-</head>
-<body>
-	<lander-page>
-		<div id="header">
-            <div id="nav">
-                <logo>
-                    <a href="https://srmuniversity.ac.in"><img src="images/Nav Logo.png"></a>
-                </logo>
-                <ul class="horizontal-list text-center">
-                    <li>
-                        <a href="#" >Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">Clubs</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Events</a>
-                    </li>
-                    <li>
-                        <a href="#experience">Contacts</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="srm">
-                SRM CULTURAL ACTIVITIES<br> CLUB
-            </div>
-            <button type="button" id="landerpage-btn"><a href="#about">Discover Now</a></button>
-		</div>
-        <div id="arrow">
-            <img src="images/Lander_Down-Arrow.png" alt="">
-            <div id="social-media">
-                <span>Follow Us</span>
-                    <a href="#"><img id="facebook" src="images/Facebook Icon.png"></a>
-                    <a href="#"><img id="instagram" src="images/Instagram Icon.png"></a>    
-            </div>
-        </div>
-        <div class="aboutSRM">
-            <h1>About SRM</h1>
-            <h3>Learn. Leap. Lead.</h3>
-            <p>The SRM Educational Group as a community have over 80,000 students and 4,500 staff spreading over seven campus in India. The SRM Group 
-                has earned the best teaching quality rating and a strong research record and offer a wide range of undergraduate, postgraduate and doctoral
-                programs in Engineering & Technology, Management Studies, Medicine and Health Sciences, Law, and Science.
-            </p>
-            <ul>
-                <li><h1>100+<br><h3>EVENTS</h3></h1></li>
-                <li><h1>50K+<br><h3>FOOTFALL</h3></h1></li>
-                <li><h1>7+<br><h3>CLUBS</h3></h1></li>
-            </ul>
-        </div>
-        <div class="culture">
-            <h1>culture<span>&</span></h1>
-            <h1 id="cult">creativity</h1>
-        </div>
-        <div class="yellowPart">
-            <h3>Never miss an opportunity to<br>engage with a Culture.</h3>
-            <button type="button" id="btn"><a href="#about">Discover Now</a></button>
-        </div>
-	</lander-page>
+body{
+    background-color: black;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+#nav{
+    width: 100%;
+    z-index: 3;
+}
+logo img{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 15vw;
+    height: 6vw;
+    display: inline;
+}
+.horizontal-list {
+    list-style: none;
+    display: inline;
+    float: right;
+    margin-right: 40%;
+    margin-top: 4.5%;
+}
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 50px 50px 0px;
+    width: 5vw;
+}
+.horizontal-list li a {
+    color: grey;
+    text-decoration: none;
+    transition: color 0.5s, border-bottom;
+    font-size: 1.5rem;
+    border-color: #ECA421;
+    font-weight: 600;
+}
+.horizontal-list li a:hover {
+    color: white;
+    border-bottom: 4px solid  #ECA421;
+    border-radius: 1px;
+}
+#header{
+    background-image: url("images/web.png");
+    background-color: black;
+    height: 250vh;
+    width: 100%;
+    background-size: contain;
+    background-position: 10%;
+}
+#srm{
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    width: 50%;
+    font-weight: 800;
+    letter-spacing: 0.25rem;
+    top: 41%;
+    left: 15%;
+    line-height: 6.2rem;
+}
 
-    <!-- shivanshi's code -->
-    <section>
-        <div class="faded-heading">
-           <h1>CULTURAL CLUBS</h1>
-        </div>
-  
-        <div class="container">
-           <div class="div1">
-              <h2>Tarang</h2>
-              <h5>Music</h5>
-           </div>
-           <div class="div2">
-              <h2>Webytes</h2>
-              <h5>Web Dev</h5>
-           </div>
-           <div class="div3">
-              <h2>Classdo</h2>
-              <h5>Drama</h5>
-           </div>
-           <div class="div4">
-              <h2>Artifice</h2>
-              <h5>Art</h5>
-           </div>
-           <div class="div5">
-              <h2>Meraki</h2>
-              <h5>Literary</h5>
-           </div>
-           <div class="div6">
-              <h2>Clicko</h2>
-              <h5>Photography</h5>
-           </div>
-           <div class="div7">
-              <h2>Blue Sapph</h2>
-              <h5>Dance</h5>
-           </div>
-           <div class="div8">
-              <h2>Meraki</h2>
-              <h5>Literary</h5>
-           </div>
-           </div>
-     </section>
-</body>
-</html>
+#landerpage-btn{
+    position: absolute;
+    background-color: #ECA421;
+    border: none;
+    border-radius: 20em;
+    top: 86%;
+    left: 15%;
+    width: 22vh;
+    height: 6vh;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#landerpage-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#arrow{
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    display: inline;
+}
+
+#social-media{
+    display: inline;
+    position: relative;
+    left: 160%;
+    top: 98%;
+}
+
+#social-media span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: grey;
+}
+
+#facebook{
+    width: 5vh;
+    height: 5vh;
+    position: relative;
+    top: 0.5em;
+    padding: 0 1rem;
+}
+
+#instagram{
+    width: 4vh;
+    height: 4vh;
+    position: relative;
+    top: 0.3em;
+}
+
+.aboutSRM{
+    color: #fff;
+    position: absolute;
+    top: 142%;
+    left: 40%;
+}
+
+.aboutSRM h1{
+    font-size: 3.8rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    letter-spacing: 0.2rem;
+}
+
+.aboutSRM h3{
+    margin: 0.6rem 0 0 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.aboutSRM p{
+    margin-top: 0.8rem;
+    word-spacing: 0.4rem;
+    line-height: 1.3;
+    font-size: 1.4rem;
+    width: 69%;
+    text-align: justify;
+}
+
+.aboutSRM ul{
+    list-style: none;
+    display: inline;
+    position: relative;
+    right: 4.6%;
+}
+
+.aboutSRM ul li{
+    display: inline-block;
+    margin: 0 9% 0 0;
+}
+
+.aboutSRM ul h1{
+    color: #ECA421;
+    letter-spacing: 0;
+    margin: 0.8rem 0 0;
+    font-size: 4rem;
+}
+
+.aboutSRM ul h3{
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+}
+
+.culture{
+    color: #fff;
+    position: absolute;
+    top: 223%;
+    left: 63%;
+}
+
+.culture h1{
+    color: grey;
+    font-size: 3.2rem;
+    font-weight: 600;
+    position: relative;
+    margin: 0 ;
+}
+
+.culture span{
+    color: #fff;
+    font-size: 5.5rem;
+    margin: 0 0.2rem 0;
+}
+
+#cult{
+    color: #ECA421;
+    position: relative;
+    left: 15%;
+}
+
+.yellowPart{
+    background-color: #ECA421;
+    width: 90%;
+    color: #fff;
+    margin: 0;
+    padding: 1.2% 0 1.2% 10%;
+    font-size: 1.8rem;
+    word-spacing: 0.3rem;
+}
+
+#btn{
+    position: absolute;
+    background-color: #000;
+    border: none;
+    top: 272%;
+    border-radius: 20em;
+    width: 30vh;
+    height: 7vh;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transform: translateY(150%);
+}
+
+#btn a{
+    text-decoration: none;
+    color: #ECA421;
+}
+
+#back{
+    width: 40%;
+    height: 10%;
+    background-image: url("images/Lander Page 2-04.png");
+    background-size: cover;
+}
+
+
+/* --shivanshi's code -- */
+.faded-heading {
+    padding-bottom: 0%;
+    margin-bottom: -9%;
+ }
+ 
+ .faded-heading h1 {
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 30%;
+    color: white;
+    padding-bottom: 0%;
+ }
+ 
+ .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    justify-items: stretch;
+    align-items: center;
+    overflow-y: hidden;
+    padding-left: 4%;
+    padding-right: 2%;
+    color: white;
+ }
+ 
+ h2 {
+    font-size: 2vw;
+    color: grey;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0%;
+ }
+ h5 {
+    font-size: 1.3vw;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-start;
+    color: grey;
+ }
+ .container div {
+    position: relative;
+    /*border-bottom: 3px solid #ECA421;
+    width: 50%;  */
+    display: inline;
+    padding: 0;
+    margin: 0;
+ }
+ .container div h5:hover {
+    color: white;
+    
+ }
+ .container div h2:hover {
+    color: white;
+ }
+ .container a:hover {
+    border-bottom: 2px solid #ECA421;
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+ }
+ .container a {
+    color: inherit;
+    text-decoration: inherit; /* no underline */
+ }
+
+section:nth-child(2n) .club-about{
+    margin-left: 5%;
+}
+section:nth-child(2n+1) .club-about{
+    margin-left: 38%;
+}
+.clubs{
+    width: 100%;
+    margin-top: 10%;
+}
+.club-name{
+    color: white;
+    width: 25%;
+    height: 35%;
+    display: inline-block;
+    font-family: monospace;
+    margin-left: 8%;
+    font-size:3vh;
+    border-bottom: 3px solid #ECA421;
+}
+.club-image{
+    display: inline-block;
+    width: 55%;
+    height: 35vh;
+    margin-left: 5%;
+    background-color: white;
+}
+.club-image img{
+    width: 100%;
+    height: 100%;
+}
+.club-about{
+    color: white;
+    width: 50%;
+    font-size:3vh;
+    font-family: helvetica;
+}
+ @media (max-width: 600px) {
+    .container { grid-template-columns: repeat(2, 1fr); }
+    .faded-heading h1 {
+       padding-top: 15% ;
+       font-size: 7vw;
+    }
+  }
